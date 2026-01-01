@@ -1,0 +1,77 @@
+<script>
+  var password = prompt("Enter password to access this website:");
+
+  if (password !== "lockwatch123") {
+    alert("Wrong password! Access denied.");
+    window.location = "https://google.com";
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Cheating Intrusion Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Exam Cheating Intrusion Detection System</h1>
+    <p>Smart Monitoring for Fair Examinations</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">How It Works</a>
+    <a href="#demo">Detection Demo</a>
+    <a href="#team">Team</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>
+        This project detects suspicious activities during exams like
+        mobile usage, head movement, and multiple persons.
+    </p>
+</section>
+
+<section id="about">
+    <h2>About the Project</h2>
+    <p>
+        An Intrusion Detection System (IDS) monitors exam environments
+        and identifies cheating behaviors using rules and camera-based analysis.
+    </p>
+</section>
+
+<section id="work">
+    <h2>How It Works</h2>
+    <ul>
+        <li>📷 Camera monitors students</li>
+        <li>👀 Detects head & eye movement</li>
+        <li>📱 Identifies mobile phone usage</li>
+        <li>⚠️ Generates alert if cheating detected</li>
+    </ul>
+</section>
+
+<section id="demo">
+    <h2>Detection Demo</h2>
+    <button onclick="detectCheating()">Start Detection</button>
+    <p id="result"></p>
+</section>
+
+<section id="team">
+    <h2>Project Team</h2>
+    <p>
+        Project Expo 2026<br>
+        Department of Computer Science
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Exam Cheating IDS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
